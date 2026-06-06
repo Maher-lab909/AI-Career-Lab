@@ -2,14 +2,21 @@ import json
 import re
 import logging
 import pdfplumber
+from openpyxl import Workbook
 from pathlib import Path
 
 data_folder = Path("project-01-cv-parser/sample_data")
 output_file = Path("project-01-cv-parser/sample_outputs/results.json")
+excel_file = Path("project-01-cv-parser/sample_outputs/results.xlsx")
 log_file = Path("project-01-cv-parser/sample_outputs/app.log")
+
+data_folder.mkdir(parents=True, exist_ok=True)
+output_file.parent.mkdir(parents=True, exist_ok=True)
+log_file.parent.mkdir(parents=True, exist_ok=True)
 
 logging.basicConfig(
     filename=log_file,
+    filemode="w",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
@@ -18,6 +25,24 @@ pdf_files = sorted(data_folder.glob("*.pdf"))
 
 email_pattern = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 phone_pattern = r"(05(?:[ -]?\d){8}|\+\d{1,3}(?:[ -]?\d){7,14})"
+
+
+def extract_candidate_name(text):
+    lines = text.splitlines()
+
+    for line in lines:
+        clean_line = line.strip()
+
+        if not clean_line:
+            continue
+
+        if "SYNTHETIC CV" in clean_line:
+            continue
+
+        return clean_line
+
+    return None
+
 
 results = []
 
@@ -51,6 +76,8 @@ for pdf_path in pdf_files:
     email_match = re.search(email_pattern, text)
     phone_match = re.search(phone_pattern, text)
 
+    candidate_name = extract_candidate_name(text)
+
     if email_match:
         email = email_match.group()
         logging.info(f"Email found: {pdf_path.name}")
@@ -65,8 +92,14 @@ for pdf_path in pdf_files:
         phone = None
         logging.warning(f"Phone not found: {pdf_path.name}")
 
+    if candidate_name:
+        logging.info(f"Candidate name found: {pdf_path.name}")
+    else:
+        logging.warning(f"Candidate name not found: {pdf_path.name}")
+
     candidate_data = {
         "file_name": pdf_path.name,
+        "candidate_name": candidate_name,
         "email": email,
         "phone": phone
     }
@@ -76,8 +109,25 @@ for pdf_path in pdf_files:
 with open(output_file, "w") as file:
     json.dump(results, file, indent=4)
 
+workbook = Workbook()
+sheet = workbook.active
+sheet.title = "CV Results"
+
+sheet.append(["file_name", "candidate_name", "email", "phone"])
+
+for candidate in results:
+    sheet.append([
+        candidate["file_name"],
+        candidate["candidate_name"],
+        candidate["email"],
+        candidate["phone"]
+    ])
+
+workbook.save(excel_file)
+
 logging.info("CV Parser run completed.")
 
 print("CV extraction completed.")
 print(f"Total PDFs processed: {len(results)}")
-print(f"Results saved to: {output_file}")
+print(f"JSON results saved to: {output_file}")
+print(f"Excel results saved to: {excel_file}")

@@ -1,27 +1,33 @@
-2026-06-06 22:27:25,872 - INFO - CV Parser run started.
-2026-06-06 22:27:25,872 - INFO - PDF files found: 6
-2026-06-06 22:27:25,872 - INFO - Processing PDF: cv_001_standard.pdf
-2026-06-06 22:27:25,894 - INFO - Text extracted successfully: cv_001_standard.pdf
-2026-06-06 22:27:25,894 - INFO - Email found: cv_001_standard.pdf
-2026-06-06 22:27:25,895 - INFO - Phone found: cv_001_standard.pdf
-2026-06-06 22:27:25,895 - INFO - Processing PDF: cv_002_two_column.pdf
-2026-06-06 22:27:25,915 - INFO - Text extracted successfully: cv_002_two_column.pdf
-2026-06-06 22:27:25,915 - INFO - Email found: cv_002_two_column.pdf
-2026-06-06 22:27:25,915 - INFO - Phone found: cv_002_two_column.pdf
-2026-06-06 22:27:25,915 - INFO - Processing PDF: cv_003_tables.pdf
-2026-06-06 22:27:25,939 - INFO - Text extracted successfully: cv_003_tables.pdf
-2026-06-06 22:27:25,939 - INFO - Email found: cv_003_tables.pdf
-2026-06-06 22:27:25,939 - INFO - Phone found: cv_003_tables.pdf
-2026-06-06 22:27:25,939 - INFO - Processing PDF: cv_004_dates_gaps.pdf
-2026-06-06 22:27:25,962 - INFO - Text extracted successfully: cv_004_dates_gaps.pdf
-2026-06-06 22:27:25,962 - INFO - Email found: cv_004_dates_gaps.pdf
-2026-06-06 22:27:25,962 - INFO - Phone found: cv_004_dates_gaps.pdf
-2026-06-06 22:27:25,962 - INFO - Processing PDF: cv_005_no_degree.pdf
-2026-06-06 22:27:25,982 - INFO - Text extracted successfully: cv_005_no_degree.pdf
-2026-06-06 22:27:25,982 - INFO - Email found: cv_005_no_degree.pdf
-2026-06-06 22:27:25,982 - INFO - Phone found: cv_005_no_degree.pdf
-2026-06-06 22:27:25,982 - INFO - Processing PDF: cv_006_long_multpage.pdf
-2026-06-06 22:27:26,019 - INFO - Text extracted successfully: cv_006_long_multpage.pdf
-2026-06-06 22:27:26,020 - INFO - Email found: cv_006_long_multpage.pdf
-2026-06-06 22:27:26,020 - INFO - Phone found: cv_006_long_multpage.pdf
-2026-06-06 22:27:26,020 - INFO - CV Parser run completed.
+2026-06-07 00:17:43,786 - INFO - CV Parser run started.
+2026-06-07 00:17:43,786 - INFO - PDF files found: 6
+2026-06-07 00:17:43,786 - INFO - Processing PDF: cv_001_standard.pdf
+2026-06-07 00:17:43,811 - INFO - Text extracted successfully: cv_001_standard.pdf
+2026-06-07 00:17:43,811 - INFO - Email found: cv_001_standard.pdf
+2026-06-07 00:17:43,811 - INFO - Phone found: cv_001_standard.pdf
+2026-06-07 00:17:43,811 - INFO - Candidate name found: cv_001_standard.pdf
+2026-06-07 00:17:43,812 - INFO - Processing PDF: cv_002_two_column.pdf
+2026-06-07 00:17:43,833 - INFO - Text extracted successfully: cv_002_two_column.pdf
+2026-06-07 00:17:43,833 - INFO - Email found: cv_002_two_column.pdf
+2026-06-07 00:17:43,833 - INFO - Phone found: cv_002_two_column.pdf
+2026-06-07 00:17:43,833 - INFO - Candidate name found: cv_002_two_column.pdf
+2026-06-07 00:17:43,833 - INFO - Processing PDF: cv_003_tables.pdf
+2026-06-07 00:17:43,861 - INFO - Text extracted successfully: cv_003_tables.pdf
+2026-06-07 00:17:43,861 - INFO - Email found: cv_003_tables.pdf
+2026-06-07 00:17:43,861 - INFO - Phone found: cv_003_tables.pdf
+2026-06-07 00:17:43,861 - INFO - Candidate name found: cv_003_tables.pdf
+2026-06-07 00:17:43,861 - INFO - Processing PDF: cv_004_dates_gaps.pdf
+2026-06-07 00:17:43,886 - INFO - Text extracted successfully: cv_004_dates_gaps.pdf
+2026-06-07 00:17:43,886 - INFO - Email found: cv_004_dates_gaps.pdf
+2026-06-07 00:17:43,886 - INFO - Phone found: cv_004_dates_gaps.pdf
+2026-06-07 00:17:43,886 - INFO - Candidate name found: cv_004_dates_gaps.pdf
+2026-06-07 00:17:43,886 - INFO - Processing PDF: cv_005_no_degree.pdf
+2026-06-07 00:17:43,907 - INFO - Text extracted successfully: cv_005_no_degree.pdf
+2026-06-07 00:17:43,907 - INFO - Email found: cv_005_no_degree.pdf
+2026-06-07 00:17:43,907 - INFO - Phone found: cv_005_no_degree.pdf
+2026-06-07 00:17:43,907 - INFO - Candidate name found: cv_005_no_degree.pdf
+2026-06-07 00:17:43,907 - INFO - Processing PDF: cv_006_long_multpage.pdf
+2026-06-07 00:17:43,947 - INFO - Text extracted successfully: cv_006_long_multpage.pdf
+2026-06-07 00:17:43,947 - INFO - Email found: cv_006_long_multpage.pdf
+2026-06-07 00:17:43,947 - INFO - Phone found: cv_006_long_multpage.pdf
+2026-06-07 00:17:43,947 - INFO - Candidate name found: cv_006_long_multpage.pdf
+2026-06-07 00:17:43,954 - INFO - CV Parser run completed.

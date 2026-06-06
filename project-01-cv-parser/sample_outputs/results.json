@@ -1,31 +1,37 @@
 [
     {
         "file_name": "cv_001_standard.pdf",
+        "candidate_name": "Maya R. Benton",
         "email": "maya.benton@example.com",
         "phone": "+1-555-0138"
     },
     {
         "file_name": "cv_002_two_column.pdf",
+        "candidate_name": "Omar Haddad",
         "email": "omar.haddad@example.org",
         "phone": "+44 20 7946 0182"
     },
     {
         "file_name": "cv_003_tables.pdf",
+        "candidate_name": "Nina Koivisto",
         "email": "nina.koivisto@example.net",
         "phone": "+358 555 0194"
     },
     {
         "file_name": "cv_004_dates_gaps.pdf",
+        "candidate_name": "Lucas Chen",
         "email": "lucas.chen@example.com",
         "phone": "+1 555 0149"
     },
     {
         "file_name": "cv_005_no_degree.pdf",
+        "candidate_name": "Aisha Patel",
         "email": "aisha.patel@example.org",
         "phone": "+91 80 5555 0177"
     },
     {
         "file_name": "cv_006_long_multpage.pdf",
+        "candidate_name": "Ethan Brooks",
         "email": "ethan.brooks@example.net",
         "phone": "+1-555-0166"
     }
