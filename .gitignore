@@ -1,0 +1,8 @@
+# Private CV files and outputs
+project-01-cv-parser/data/
+project-01-cv-parser/outputs/
+project-01-cv-parser/logs/
+
+# Python cache
+__pycache__/
+*.pyc
