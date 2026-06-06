@@ -6,65 +6,49 @@ CV Parser is a Python project that extracts candidate contact information from P
 
 The current version extracts:
 
+* Candidate name
 * Email address
 * Phone number
 
-The extracted information is saved as structured JSON output.
+The extracted information is saved in two formats:
+
+* JSON for structured technical output
+* Excel for recruiter-friendly review
 
 ## Business Problem
 
-Recruiters often spend time manually opening CVs and searching for contact information such as email addresses and phone numbers.
+Recruiters often receive many CVs and manually search for basic contact information such as names, email addresses, and phone numbers.
 
 This process is repetitive, time-consuming, and prone to manual error.
 
+Many recruiters also prefer Excel over JSON because Excel is easier to review, filter, and share with hiring teams.
+
 ## Solution
 
-This project automates the first step of candidate information extraction.
+This project automates the first step of candidate contact extraction.
 
-The program reads PDF CV files from the `data` folder, extracts text, searches for email and phone patterns, and saves the results into a JSON file.
+The program reads PDF CV files, extracts text, identifies candidate contact details using pattern matching, and saves the results into both JSON and Excel files.
 
 ## Current Scope
 
 Version 1 supports:
 
-* Reading PDF files
+* Reading multiple PDF CV files
 * Extracting text from PDFs
-* Extracting email addresses
-* Extracting phone numbers
-* Processing multiple CVs
-* Handling missing email or phone values
+* Extracting candidate name
+* Extracting email address
+* Extracting phone number
 * Saving results as JSON
-* Writing basic logs
-
-## Public Sample Test Data
-
-This repository includes synthetic CV files for public testing.
-
-The sample files are stored in:
-
-project-01-cv-parser/sample_data/
-
-The sample output is stored in:
-
-project-01-cv-parser/sample_outputs/results.json
-
-These files are synthetic and do not represent real people.
-
-Private CV files should be kept in:
-
-project-01-cv-parser/data/
-
-Private extraction outputs should be kept in:
-
-project-01-cv-parser/outputs/
-
-Private folders are not uploaded to GitHub because they may contain personal information.
-
+* Saving results as Excel
+* Handling missing values
+* Writing basic processing logs
+* Running public tests using synthetic CVs
 
 ## Tools Used
 
 * Python
 * pdfplumber
+* openpyxl
 * re
 * json
 * logging
@@ -72,29 +56,120 @@ Private folders are not uploaded to GitHub because they may contain personal inf
 
 ## Folder Structure
 
+```text
 AI-Career-Lab/
-project-01-cv-parser/
-data/
-logs/
-outputs/
-main.py
-README.md
-requirements.txt
+├── architecture/
+├── case-studies/
+├── notes/
+├── project-01-cv-parser/
+│   ├── data/
+│   ├── logs/
+│   ├── outputs/
+│   ├── sample_data/
+│   ├── sample_outputs/
+│   ├── src/
+│   ├── tests/
+│   ├── main.py
+│   ├── README.md
+│   ├── TESTING.md
+│   └── requirements.txt
+└── resources/
+```
+
+## Public Sample Test Data
+
+This repository includes synthetic CV files for public testing.
+
+The sample files are stored in:
+
+```text
+project-01-cv-parser/sample_data/
+```
+
+The sample outputs are stored in:
+
+```text
+project-01-cv-parser/sample_outputs/
+```
+
+Public sample outputs include:
+
+```text
+results.json
+results.xlsx
+app.log
+```
+
+These files are synthetic and do not represent real people.
+
+## Private Data Rule
+
+Private CV files should be kept in:
+
+```text
+project-01-cv-parser/data/
+```
+
+Private extraction outputs should be kept in:
+
+```text
+project-01-cv-parser/outputs/
+```
+
+Private logs should be kept in:
+
+```text
+project-01-cv-parser/logs/
+```
+
+Private folders are not uploaded to GitHub because they may contain personal information.
 
 ## Output Example
 
+JSON output:
+
+```json
 [
-{
-"file_name": "example_cv.pdf",
-"email": "[candidate@example.com](mailto:candidate@example.com)",
-"phone": "+966 50 000 0000"
-},
-{
-"file_name": "missing_phone_cv.pdf",
-"email": "[candidate2@example.com](mailto:candidate2@example.com)",
-"phone": null
-}
+    {
+        "file_name": "cv_001_standard.pdf",
+        "candidate_name": "Maya R. Benton",
+        "email": "maya.benton@example.com",
+        "phone": "+1-555-0138"
+    }
 ]
+```
+
+Excel output:
+
+```text
+file_name | candidate_name | email | phone
+```
+
+The Excel output is designed for recruiters who need a simple table they can review, filter, and share.
+
+## How to Run
+
+Install dependencies:
+
+```powershell
+python -m pip install -r project-01-cv-parser/requirements.txt
+```
+
+Run the parser:
+
+```powershell
+python project-01-cv-parser/main.py
+```
+
+## Current Output Locations
+
+For public sample testing:
+
+```text
+project-01-cv-parser/sample_outputs/results.json
+project-01-cv-parser/sample_outputs/results.xlsx
+project-01-cv-parser/sample_outputs/app.log
+```
 
 ## Human Review Rule
 
@@ -102,22 +177,23 @@ This tool assists recruiters by extracting contact information.
 
 It does not make hiring decisions.
 
-Recruiters must review and validate the extracted information.
+Recruiters must review and validate the extracted information before using it.
 
-## Current Limitations
+## Known Limitations
 
-* Image-based or scanned PDFs may not return email or phone values.
+* Image-based or scanned PDFs may return null values.
 * OCR is not included in the current version.
-* The extraction depends on text quality inside the PDF.
-* Some unusual phone formats may require future improvements.
+* Candidate name extraction uses a simple rule and may require future improvement for real-world CV formats.
+* Phone extraction depends on recognizable phone number patterns.
+* Some unusual CV layouts may require future parser improvements.
 
 ## Status
 
-Current project status: working local prototype.
+Current project status: working local prototype with public synthetic test evidence.
 
 The next improvements are:
 
-* Improve test documentation
-* Add architecture diagram
+* Recreate architecture diagram with Excel output
 * Add case study
-* Improve README formatting
+* Record demo video
+* Improve parser structure by moving logic into separate files
