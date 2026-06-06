@@ -36,6 +36,31 @@ Version 1 supports:
 * Saving results as JSON
 * Writing basic logs
 
+## Public Sample Test Data
+
+This repository includes synthetic CV files for public testing.
+
+The sample files are stored in:
+
+project-01-cv-parser/sample_data/
+
+The sample output is stored in:
+
+project-01-cv-parser/sample_outputs/results.json
+
+These files are synthetic and do not represent real people.
+
+Private CV files should be kept in:
+
+project-01-cv-parser/data/
+
+Private extraction outputs should be kept in:
+
+project-01-cv-parser/outputs/
+
+Private folders are not uploaded to GitHub because they may contain personal information.
+
+
 ## Tools Used
 
 * Python
