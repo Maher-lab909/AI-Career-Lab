@@ -4,9 +4,9 @@ import logging
 import pdfplumber
 from pathlib import Path
 
-data_folder = Path("project-01-cv-parser/data")
-output_file = Path("project-01-cv-parser/outputs/results.json")
-log_file = Path("project-01-cv-parser/logs/app.log")
+data_folder = Path("project-01-cv-parser/sample_data")
+output_file = Path("project-01-cv-parser/sample_outputs/results.json")
+log_file = Path("project-01-cv-parser/sample_outputs/app.log")
 
 logging.basicConfig(
     filename=log_file,
