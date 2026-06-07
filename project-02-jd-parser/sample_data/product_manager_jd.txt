@@ -1,0 +1,36 @@
+SYNTHETIC JOB DESCRIPTION FOR PARSING TESTS - NOT A REAL POSTING
+
+Job Title: Product Manager
+Company: Northstar Demo Products
+Location: Remote
+Employment Type: Full-Time
+Years of Experience: 4-7 years
+Education: Bachelor's degree in Business, Computer Science, Engineering, Design, or equivalent practical experience
+
+Required Skills:
+- Product roadmap planning
+- User story writing and backlog management
+- Stakeholder communication
+- Basic understanding of software development lifecycle
+- Prioritization using business impact and user needs
+- Experience working with engineering and design teams
+- Ability to define product success metrics
+
+Preferred Skills:
+- Experience with B2B software products
+- Familiarity with analytics tools
+- Knowledge of agile delivery methods
+- Experience running user interviews
+- Understanding of go-to-market coordination
+
+Responsibilities:
+- Define product requirements and user stories
+- Prioritize roadmap items with business and technical teams
+- Coordinate product discovery with users and stakeholders
+- Track product performance using agreed metrics
+- Lead sprint planning discussions from a product perspective
+- Communicate release plans and tradeoffs clearly
+- Maintain product documentation and decision records
+
+About the Role:
+Northstar Demo Products is a synthetic company name for safe educational use. The Product Manager will guide the development of software features from discovery through delivery. This role is suited for someone who can balance user needs, business goals, and technical constraints. The Product Manager will work closely with engineering, design, customer support, and leadership to define what should be built and why. Strong communication and prioritization are essential. The role focuses on practical product execution, clear documentation, and measurable outcomes rather than vague strategy work.
