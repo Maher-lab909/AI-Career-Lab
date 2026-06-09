@@ -1,0 +1,20 @@
+2026-06-09 18:19:19,722 - INFO - CV-to-JD Matcher run started.
+2026-06-09 18:19:19,722 - INFO - Candidates loaded: 4
+2026-06-09 18:19:19,722 - INFO - Jobs loaded: 4
+2026-06-09 18:19:19,722 - INFO - Matched Maya Benton against Python Backend Developer - Score: 80.0%
+2026-06-09 18:19:19,722 - INFO - Matched Maya Benton against Data Analyst - Score: 40.0%
+2026-06-09 18:19:19,722 - INFO - Matched Maya Benton against HR Specialist - Score: 0.0%
+2026-06-09 18:19:19,722 - INFO - Matched Maya Benton against Cybersecurity Analyst - Score: 0.0%
+2026-06-09 18:19:19,722 - INFO - Matched Omar Faris against Python Backend Developer - Score: 0.0%
+2026-06-09 18:19:19,722 - INFO - Matched Omar Faris against Data Analyst - Score: 80.0%
+2026-06-09 18:19:19,722 - INFO - Matched Omar Faris against HR Specialist - Score: 0.0%
+2026-06-09 18:19:19,722 - INFO - Matched Omar Faris against Cybersecurity Analyst - Score: 0.0%
+2026-06-09 18:19:19,723 - INFO - Matched Lina Carter against Python Backend Developer - Score: 0.0%
+2026-06-09 18:19:19,723 - INFO - Matched Lina Carter against Data Analyst - Score: 0.0%
+2026-06-09 18:19:19,723 - INFO - Matched Lina Carter against HR Specialist - Score: 80.0%
+2026-06-09 18:19:19,723 - INFO - Matched Lina Carter against Cybersecurity Analyst - Score: 0.0%
+2026-06-09 18:19:19,723 - INFO - Matched Noah Kim against Python Backend Developer - Score: 20.0%
+2026-06-09 18:19:19,723 - INFO - Matched Noah Kim against Data Analyst - Score: 20.0%
+2026-06-09 18:19:19,723 - INFO - Matched Noah Kim against HR Specialist - Score: 0.0%
+2026-06-09 18:19:19,723 - INFO - Matched Noah Kim against Cybersecurity Analyst - Score: 80.0%
+2026-06-09 18:19:19,723 - INFO - CV-to-JD Matcher run completed.
